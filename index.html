@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountains Climbed</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        div {
+            background-color: plum;
+            border-style: ridge;
+            border-color: black;
+            padding: 1px;
+            margin: 1px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-mountain-name"> Mountain Name </label>
+                        <input type="text" class="form-control" id="new-mountain-name">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-elevation"> Elevation </label>
+                        <input type="text" class="form-control" id="new-elevation">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-date"> Date Summited </label>
+                        <input type="date" class="form-control" id="new-date"> 
+                    </div>
+                </div>
+                <button id="add" class="btn btn-primary from-control"> Submit</button>
+            </div>
+        </div> 
+    </div>        
+
+
+    <table id="list" class="table table-hover">
+        <tr>
+            <th>Mountain Name</th>
+            <th>Elevation</th>
+            <th>Date Summited</th>
+        </tr>
+        <tr>
+             <td>Torreys Peak</td>
+            <td>14,275ft</td>
+            <td>July 15, 2010</td>
+        </tr>
+        <tr>
+            <td>Quandry Peak</td>
+            <td>14,265ft</td>
+            <td>June 8, 2014</td>
+        </tr>
+        <tr>
+            <td>Grays Peak</td>
+            <td>14,278ft</td>
+            <td>July 28, 2018</td>
+        </tr> 
+    </table>
+
+    <script src="completed.js"></script>     
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/boostrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
